@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nextjs:
+    build:
+      context: ./
+    container_name: portfolio-web
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
